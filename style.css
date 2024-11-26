@@ -177,11 +177,8 @@ main{
 #home{
     height:100vh;
     width: 100%;
-<<<<<<< HEAD
-    background-image: url("/Assets/IMG_4352.jpg");
-=======
-    background-image: url("/Assets/IMG_4352-Recovered\ copy.jpg");
->>>>>>> d86d507 (initial commit)
+    background-image: url("Assets/IMG_4352.jpg");
+    background-image: url("Assets/IMG_4352-Recovered\ copy.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -824,11 +821,8 @@ main{
 .project1{
     display: flex;
     position: absolute;
-<<<<<<< HEAD
     top: 2450px;
-=======
     top: 2350px;
->>>>>>> d86d507 (initial commit)
     height: 250px;
     width: 250px;
 }
@@ -838,7 +832,6 @@ main{
     top: 10px;
     height: 250px;
     width: 250px;;
-<<<<<<< HEAD
 }
 /* Responsive design for mobile view */
 
@@ -919,6 +912,4 @@ img {
         flex: 1 1 calc(33.33% - 10px);
     }
 }
-=======
 }
->>>>>>> d86d507 (initial commit)
