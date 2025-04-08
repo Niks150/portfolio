@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon " type="x-icon" href="/Assets/me.png"
+    <link rel="shortcut icon" type="x-icon" href="/Assets/me.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- ADD ICONSCOUT UNICONS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-
-
 </head>
 
 <body>
@@ -31,27 +33,21 @@
                 <a href="https://www.instagram.com/whynot_nikkk/?next=%2F" target="_main"><i
                         class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/sandeep-swami-b14553321/"><i class="fa fa-linkedin"></i></a>
-
             </div>
         </div>
 
         <!-- navbar -->
-
         <nav>
             <ul>
-                <li><a href="#home" class="active  "><i class="fa fa-fw fa-home"></i>Home</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-fw fa-home"></i>Home</a></li>
                 <li><a href="#about"><i class="fa fa-fw fa-user"></i>About Me</a></li>
                 <li><a href="#skill"><i class="fa fa-fw fa-pencil"></i>Skills</a></li>
-                <li><a href="#resume"><i class="fa fa-fw fa-briefcase"></i>Resume</a></li>
+                <li><a href="#experience"><i class="fa fa-fw fa-briefcase"></i>Experience</a></li>
+                <li><a href="#project"><i class="fa fa-fw fa-code"></i>Project</a></li>
+                <li><a href="#resume"><i class="fa fa-fw fa-file"></i>Resume</a></li>
                 <li><a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
             </ul>
         </nav>
-
-
-
-
-
-
     </header>
 
     <!-- Header end -->
@@ -63,40 +59,24 @@
     <main>
 
         <!-- Home section start -->
-
-        <section id="home">
+        <section id="home" class="fade-in">
             <div class="home-row">
                 <h1>Hi, This is<br> Swami Sandeep<span>.</span></h1>
                 <p>I'm a Front Developer <span class="auto-input"></span></p>
             </div>
         </section>
-
         <!-- Home section end -->
 
         <!-- ===== About section start =====-->
-        <section id="about">
+        <section id="about" class="fade-in">
             <h1 class="sub-heading">About Me</h1>
             <div class="divider"></div>
-            <p>I'm Swami Sandeep I'm a Front-End Developer || UI/Ux Designer .</p>
-
+            <p>I'm Swami Sandeep I'm a Front-End Developer || UI/Ux Designer.</p>
 
             <div class="about-col">
-
                 <!-- image col -->
                 <div class="img-col">
-                    <style>
-                        .img-col {
-                            height: 317px;
-                            width: 287px;
-                            right: 50px;
-                            display: flex;
-                            left: 89px;
-                            justify-content: flex-end;
-
-                        }
-                    </style>
-                    <img src="Assets/IMG_4349 copy.jpg"  alt="image">
-
+                    <img src="Assets/IMG_4349 copy.jpg" alt="image">
                 </div>
 
                 <!-- information -->
@@ -107,13 +87,13 @@
                         <!-- left side list -->
                         <div class="icon-list">
                             <ul style="list-style-type: circle;">
-                                <li><i class="fa-solid fa-angle-right"></i><strong>Birthday:</strong><span>15 Aug, 2004
+                                <li><i class="fa-solid "></i><strong>Birthday:</strong><span>15 Aug, 2004
                                     </span></li>
-                                <li><i class="fa-solid fa-angle-right"></i><strong>Mobile No:</strong> <span>+91
+                                <li><i class="fa-solid "></i><strong>Mobile No:</strong> <span>+91
                                         9016372258</span></li>
-                                <li><i class="fa-solid fa-angle-right"></i><strong>City:</strong><span> Vadodara</span>
+                                <li><i class="fa-solid "></i><strong>City:</strong><span> Vadodara</span>
                                 </li>
-                                <li><i class="fa-solid fa-angle-right"></i><strong>State:</strong><span>Gujarat </span>
+                                <li><i class="fa-solid "></i><strong>State:</strong><span>Gujarat </span>
                                 </li>
                             </ul>
                         </div>
@@ -121,146 +101,372 @@
                         <!-- Right side list -->
                         <div class="icon-list">
                             <ul>
-                                <li><i class="fa-solid fa-angle-right"></i><strong>Age:</strong><span> 20</span></li>
-                                <li><i class="fa-solid fa-angle-right"></i><strong>Degree:</strong><span> B.tech </span>
+                                <li><i class="fa-solid "></i><strong>Age:</strong><span> 20</span></li>
+                                <li><i class="fa-solid "></i><strong>Degree:</strong><span> B.tech </span>
                                 </li>
-                                <li><i class="fa-solid fa-angle-right"></i><strong>Program:</strong><span> Information
+                                <li><i class="fa-solid "></i><strong>Program:</strong><span> Information
                                         Technology </span></li>
-                                <li><i class="fa-solid fa-angle-right"></i><strong>Email_id:</strong>
+                                <li><i class="fa-solid "></i><strong>Email_id:</strong>
                                     swamisandeep344@gmail.com<span></span></li>
-
-
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </section>
         <!-- ===== About section end =====-->
 
         <!-- Skills Section Start -->
-        <section id="skill">
-
+        <section id="skill" class="fade-in">
             <h1 class="sub-heading">Summary</h1>
             <div class="divider"></div>
             <p class="sub-para">Experienced UI/UX Designer adept at creating intuitive and engaging user interfaces.
                 Skilled in applying design principles to deliver high-quality graphics, interactive prototypes, and
                 tailored mockups. Expertise lies in balancing functionality and aesthetics to enhance user experience
                 and satisfaction. Collaborative approach to driving product visions and developing innovative solutions
-                for complex design challenges. </p>
+                for complex design challenges.</p>
 
-
-
-
-            <!-- Resume Section Start -->
-            <section id="resume">
-
-                <h1 class="sub-heading">Resume</h1>
-                <div class="divider"></div>
-
-                <div class="resume-row">
-                    <!-- left cols  -->
-
-                    <div class="resume-cols">
-                        <h2>Education</h2>
-                        <div class="my-edu">
-                            <h3>Bachelor's Of Technology in Information Technology</h3>
-                            <span class="sp-box">2022-26</span>
-                            <p>Parul University Of Engineering and Technology </p>
-
-
-                        </div>
-
-                        <div class="my-edu">
-                            <h3>Senior Secondary (12th)</h3>
-                            <span class="sp-box">2019-2020</span>
-                            <p>Ambe School</p>
-
-                        </div>
-
+            <!-- Added skill bars -->
+            <div class="skill-row">
+                <div class="skill-box">
+                    <div class="skill-info">
+                        <h2>HTML5 & CSS</h2>
+                        <h2>92%</h2>
                     </div>
-
-
-                    <!-- Right Cols -->
-
-                    <div class="resume-cols">
-                        <h2>Hobbies</h2>
-                        <div class="hobby">
-                            <h3>Art&Craft</h3>
-                            <p>Art and Craft has always fascinated me since my childhood. I've participated in many art
-                                competitions from the beginning i used to draw Animated character and potraits .</p>
-                        </div>
-                        <br>
-                        <br>
-
-
-                        <div class="hobby">
-                            <h3>Music</h3>
-                            <p>Listning song is feels me nice and it converts the mood as i am an RETOPHILE means i
-                                prefer to listen old songs and Ghazals. </p>
-                        </div>
+                    <div class="skill-outter-line">
+                        <div class="skill-inner-line" style="width: 92%;"></div>
                     </div>
                 </div>
-            </section>
-            <!-- Resume Section End -->
-
-            <!-- Projects Section Start-->
-            <section id="project">
-                <h1 class="sub-heading">Recent Projects</h1>
-                <div class="divider"></div>
-
-                <div class="project-row1">
-                    <!-- left col -->
-
-
-                    <!-- Right col -->
-                    <div class="project-cols">
-
-                        <h2>Project 1</h2>
-                        <h3>An Resturant Website</h3>
-                        <div class="pro1-description">
-                            <p>Khana Khazana is a dynamic restaurant website designed using <b> HTML,CSS, and
-                                    JavaScript</b>.
-                                The site offers a visually appealing layout with responsive design, making it accessible
-                                on various devices. It showcases the restaurant's menu, specials, and services with
-                                smooth navigation and interactive features, providing users with a seamless dining
-                                experience online</p>
-                        </div>
+                <div class="skill-box">
+                    <div class="skill-info">
+                        <h2>JavaScript</h2>
+                        <h2>85%</h2>
+                    </div>
+                    <div class="skill-outter-line">
+                        <div class="skill-inner-line" style="width: 85%;"></div>
                     </div>
                 </div>
-
-                <div class="project-row2">
-                    <!-- left-col -->
-                    <div class="project-cols">
-                        <h2>Project 2</h2>
-                        <H3>Responsive-ToDo list </H3>
-                        <div class="pro2-description">
-                            <p>A responsive ToDo list project allows users to manage tasks efficiently across various
-                                devices, adjusting seamlessly to different screen sizes. It features an intuitive
-                                interface for adding, editing, and deleting tasks, ensuring that task management is easy
-                                and user-friendly. With real-time updates and a clean design, it enhances productivity
-                                and offers a smooth user experience.
-                            </p>
-                        </div>
+                <div class="skill-box">
+                    <div class="skill-info">
+                        <h2>UI/UX Design</h2>
+                        <h2>90%</h2>
                     </div>
-
-                    <!-- right col -->
-                    <div class="project_2">
-                        <img src="Assets/project1.png">
+                    <div class="skill-outter-line">
+                        <div class="skill-inner-line" style="width: 90%;"></div>
                     </div>
                 </div>
-            </section>
-            <div class="project1">
-                <img src="Assets/2.png">
+                <div class="skill-box">
+                    <div class="skill-info">
+                        <h2>Responsive Design</h2>
+                        <h2>88%</h2>
+                    </div>
+                    <div class="skill-outter-line">
+                        <div class="skill-inner-line" style="width: 88%;"></div>
+                    </div>
+                </div>
             </div>
+        </section>
+        <!-- Skills Section End -->
 
-            <!-- Projects Section End-->
+        <!-- Experience Section Start -->
+        <section id="experience" class="fade-in">
+            <h1 class="sub-heading">Experience</h1>
+            <div class="divider"></div>
 
+            <div class="experience-row">
+                <div class="experience-item">
+                    <h3>Front-End Developer Intern</h3>
+                    <span class="exp-company">Tech Solutions Ltd</span>
+                    <span class="exp-duration">June 2023 - August 2023</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia,
+                        nisl nunc aliquam nisl, eget aliquam nunc nisl eget nisl. Sed euismod, nunc vel tincidunt
+                        lacinia,
+                        nisl nunc aliquam nisl, eget aliquam nunc nisl eget nisl.</p>
+                </div>
 
+                <div class="experience-item">
+                    <h3>UI/UX Design Intern</h3>
+                    <span class="exp-company">Creative Designs Studio</span>
+                    <span class="exp-duration">January 2023 - April 2023</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia,
+                        nisl nunc aliquam nisl, eget aliquam nunc nisl eget nisl. Sed euismod, nunc vel tincidunt
+                        lacinia,
+                        nisl nunc aliquam nisl, eget aliquam nunc nisl eget nisl.</p>
+                </div>
 
+                <div class="experience-item">
+                    <h3>Web Development Project</h3>
+                    <span class="exp-company">University Project</span>
+                    <span class="exp-duration">September 2022 - December 2022</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia,
+                        nisl nunc aliquam nisl, eget aliquam nunc nisl eget nisl. Sed euismod, nunc vel tincidunt
+                        lacinia,
+                        nisl nunc aliquam nisl, eget aliquam nunc nisl eget nisl.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Experience Section End -->
 
+        <!-- Project Section Start -->
+        <section id="project" class="fade-in">
+            <h1 class="sub-heading">Featured Project</h1>
+            <div class="divider"></div>
+
+            <div class="featured-project">
+                <div class="project-image">
+                    <img src="Assets/project-image.png" alt="Lost & Found and Buy & Sell Platform">
+                </div>
+                <div class="project-details">
+                    <h2>Lost & Found and Buy & Sell Platform</h2>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Responsive Design</span>
+                    </div>
+                    <p>A comprehensive web platform that helps university students find lost items and also buy/sell
+                        used goods
+                        within the campus community. The application features a user-friendly interface, real-time
+                        notifications,
+                        secure messaging system, and mobile responsiveness.</p>
+                    <div class="project-highlights">
+                        <div class="highlight">
+                            <i class="fa fa-check-circle"></i>
+                            <span>Streamlined item reporting and searching</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fa fa-check-circle"></i>
+                            <span>Secure user authentication</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fa fa-check-circle"></i>
+                            <span>Filter and sorting capabilities</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fa fa-check-circle"></i>
+                            <span>In-app messaging for negotiations</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fa fa-github"></i> View Code</a>
+                        <a href="#" class="project-link"><i class="fa fa-external-link"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Project Section End -->
+
+        <!-- Resume Section Start -->
+        <section id="resume" class="fade-in">
+            <h1 class="sub-heading">Resume</h1>
+            <div class="divider"></div>
+
+            <div class="resume-row">
+                <!-- left cols  -->
+                <div class="resume-cols">
+                    <h2>Education</h2>
+                    <div class="my-edu">
+                        <h3>Bachelor's Of Technology in Information Technology</h3>
+                        <span class="sp-box">2022-26</span>
+                        <p>Parul University Of Engineering and Technology </p>
+                    </div>
+
+                    <div class="my-edu">
+                        <h3>Senior Secondary (12th)</h3>
+                        <span class="sp-box">2019-2020</span>
+                        <p>Ambe School</p>
+                    </div>
+                </div>
+
+                <!-- Right Cols -->
+                <div class="resume-cols">
+                    <h2>Hobbies</h2>
+                    <div class="hobby">
+                        <h3>Art&Craft</h3>
+                        <p>Art and Craft has always fascinated me since my childhood. I've participated in many art
+                            competitions from the beginning i used to draw Animated character and potraits.</p>
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="hobby">
+                        <h3>Music</h3>
+                        <p>Listning song is feels me nice and it converts the mood as i am an RETOPHILE means i
+                            prefer to listen old songs and Ghazals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Resume Section End -->
+
+        <!-- Contact Section Start -->
+        <section id="contact" class="fade-in">
+            <h1 class="sub-heading">Contact Me</h1>
+            <div class="divider"></div>
+
+            <div class="contact-row">
+                <div class="contact-left">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="info">
+                            <h4>Location</h4>
+                            <p>Vadodara, Gujarat, India</p>
+                        </div>
+                    </div>
+
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="info">
+                            <h4>Email</h4>
+                            <p>swamisandeep344@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="info">
+                            <h4>Call</h4>
+                            <p>+91 9016372258</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right-fo">
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="text" name="subject" placeholder="Subject" required>
+                            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                            <input type="submit" value="Send Message">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section End -->
+    </main>
+
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Nav Toggle
+        let menuBtn = document.querySelector('#MenuBtn');
+        let header = document.querySelector('header');
+
+        menuBtn.addEventListener('click', function () {
+            header.classList.toggle('mobile-nav-active');
+        });
+
+        // Preloader
+        window.addEventListener('load', function () {
+            const preloader = document.querySelector('.preloader');
+            preloader.classList.add('fade-out');
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        });
+
+        // GSAP Animations - Wait for DOM to be loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            // Register ScrollTrigger plugin
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Fade-in animation for sections
+            gsap.utils.toArray('.fade-in').forEach(section => {
+                gsap.fromTo(section,
+                    { opacity: 0, y: 50 },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        duration: 1,
+                        scrollTrigger: {
+                            trigger: section,
+                            start: "top 80%",
+                            end: "bottom 20%",
+                            toggleActions: "play none none none"
+                        }
+                    }
+                );
+            });
+
+            // Profile animation
+            gsap.fromTo('.profile',
+                { opacity: 0, scale: 0.8 },
+                { opacity: 1, scale: 1, duration: 1, delay: 0.3 }
+            );
+
+            // Navbar links animation
+            gsap.fromTo('nav ul li',
+                { opacity: 0, x: -50 },
+                {
+                    opacity: 1,
+                    x: 0,
+                    duration: 0.5,
+                    stagger: 0.1,
+                    delay: 0.5
+                }
+            );
+
+            // Skill bars animation
+            gsap.utils.toArray('.skill-inner-line').forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = 0;
+
+                ScrollTrigger.create({
+                    trigger: bar,
+                    start: "top 80%",
+                    onEnter: () => {
+                        gsap.to(bar, {
+                            width: width,
+                            duration: 1.5,
+                            ease: "power2.out"
+                        });
+                    }
+                });
+            });
+
+            // Project highlights animation
+            gsap.fromTo('.highlight',
+                { opacity: 0, x: -20 },
+                {
+                    opacity: 1,
+                    x: 0,
+                    duration: 0.4,
+                    stagger: 0.1,
+                    scrollTrigger: {
+                        trigger: '.project-highlights',
+                        start: "top 80%"
+                    }
+                }
+            );
+
+            // Experience items animation
+            gsap.utils.toArray('.experience-item').forEach((item, i) => {
+                gsap.fromTo(item,
+                    { opacity: 0, y: 30 },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        duration: 0.6,
+                        delay: i * 0.2,
+                        scrollTrigger: {
+                            trigger: item,
+                            start: "top 85%"
+                        }
+                    }
+                );
+            });
+        });
+    </script>
 </body>
 
 </html>
