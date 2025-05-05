@@ -313,6 +313,12 @@ section:nth-child(odd) {
     line-height: 1.6;
 }
 
+.paragraph{
+    display: inline;
+   
+    
+}
+
 /* About section */
 #about .about-col{
     display:flex;
@@ -794,4 +800,4 @@ footer .footer-up {
 
 footer .footer-up:hover {
     transform: scale(1.1);
-}
+}}
